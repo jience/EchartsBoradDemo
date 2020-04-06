@@ -178,6 +178,14 @@ header .showTime {
   position: relative;
   height: 10.125rem;
 }
+.map .chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  height: 10.125rem;
+  width: 100%;
+}
 .map .map1 {
   position: absolute;
   width: 6.475rem;
@@ -234,5 +242,16 @@ header .showTime {
   }
   to {
     transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+/* 约束屏幕尺寸 */
+@media screen and (max-width: 1024px) {
+  html {
+    font-size: 42px !important;
+  }
+}
+@media screen and (min-width: 1920px) {
+  html {
+    font-size: 80px !important;
   }
 }
